@@ -10,7 +10,16 @@ function print(text) {
  * чтобы функция sayHello работала корректно
  */
 function isValid(name) {
-  // ваш код...
+ let space = name.includes(' ') ;
+ 
+
+ if (name.length >= 4 && !space && !!name !== null) {
+    return true;   
+ }
+  else{
+    return false;
+  }
+  
 }
 
 function sayHello() {
@@ -22,3 +31,4 @@ function sayHello() {
     print('Некорректное имя');
   }
 }
+console.log('test1');
