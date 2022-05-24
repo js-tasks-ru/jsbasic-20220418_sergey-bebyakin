@@ -8,4 +8,3 @@ function makeFriendsList(friends) {
     return ul;
     // document.body.append(ul);
 }
-makeFriendsList();
