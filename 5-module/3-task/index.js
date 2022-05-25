@@ -9,13 +9,13 @@ function initCarousel() {
   function rightClick() {
       if (index < 3) { index++; }
       if (index > 2) { buttonRight.style.display = 'none' }
-      carouselInner.style.transform = `translateX(${index * -500}px)`;
+      carouselInner.style.transform = `translateX(${index * -carouselInner.offsetWidth}px)`;
       if (index == 0) { buttonLeft.style.display = 'none' } else {buttonLeft.style.display = ''}
   }
   function leftClick() {
       if (index != 0) { index--; }
       if (index == 0) { buttonLeft.style.display = 'none' }
-      carouselInner.style.transform = `translateX(${index * -500}px)`;
+      carouselInner.style.transform = `translateX(${index * -carouselInner.offsetWidth}px)`;
       if (index > 2) { buttonRight.style.display = 'none' } else {buttonRight.style.display = ''}
   }
 }

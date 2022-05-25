@@ -15,6 +15,3 @@ function getMinMax(str) {
 
 
 }
-console.log(getMinMax(inputData));
-Math.max(...numKey);
-Math.min(...numKey);
