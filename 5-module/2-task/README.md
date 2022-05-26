@@ -8,7 +8,7 @@ function toggleText() {
 }
 
 toggleText();
-```
+``` 
 
 Вёрстка для задачи:
 ```html
